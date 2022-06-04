@@ -1,6 +1,6 @@
 import { LinearProgress, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import React, { useState } from "react";
+import React from "react";
 
 const LoadingPage = () => {
     return (

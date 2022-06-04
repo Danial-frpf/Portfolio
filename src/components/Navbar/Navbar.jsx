@@ -11,7 +11,7 @@ import {
 import { Box } from "@mui/system";
 import { Menu } from "@mui/icons-material";
 
-const Navbar = () => {
+const Navbar = ({ setOpenDrawer }) => {
     const trigger = useScrollTrigger();
     return (
         <Slide appear={false} direction="down" in={!trigger}>
@@ -27,6 +27,9 @@ const Navbar = () => {
                                 lg: "none",
                                 xl: "none",
                             },
+                        }}
+                        onClick={() => {
+                            setOpenDrawer(true);
                         }}
                     >
                         <Menu />

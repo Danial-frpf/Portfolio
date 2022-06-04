@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "portfolio-5c1dd"
+  },
+  "targets": {
+    "portfolio-5c1dd": {
+      "hosting": {
+        "portfolio": [
+          "danial"
+        ]
+      }
+    }
+  }
+}
