@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Box } from "@mui/system";
 import { Slide } from "@mui/material";
 import { ArrowButton } from "../";
+import CustomImg from "../CustomImg";
 
 const Carousel = ({ height, images }) => {
     const [active, setActive] = useState(1);
@@ -30,7 +31,7 @@ const Carousel = ({ height, images }) => {
     }
 
     return (
-        <Box width="100%" height={height ? height : "80vh"}>
+        <Box width="100%" height={height ? height : "80vh"} position="relative">
             <ArrowButton leftHandler={leftHandler} direction="left" />
             <ArrowButton rightHandler={rightHandler} direction="right" />
             {images.map((image, i) => {
@@ -41,15 +42,9 @@ const Carousel = ({ height, images }) => {
                             in
                             key={i}
                         >
-                            <img
-                                style={{
-                                    objectFit: "contain",
-                                    width: "inherit",
-                                    height: "inherit",
-                                }}
-                                src={image}
-                                alt=""
-                            />
+                            <Box width="inherit" height="inherit">
+                                <CustomImg image={image} />
+                            </Box>
                         </Slide>
                     );
                 } else {

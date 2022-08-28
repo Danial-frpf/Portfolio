@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Carousel, Tec } from "./";
 import { spaceShooterImages } from "../../../media/";
 import { Box, Card, CardContent, Stack, Typography } from "@mui/material";
+import { useOnScreen } from "../../../customHooks";
 
 const SpaceShooter = () => {
+    const myStoryRef = useRef();
+    const isVisible = useOnScreen(myStoryRef);
+
     return (
-        <Box m="5rem 0 0 0">
+        <Box ref={myStoryRef} m="5rem 0 0 0">
             <Typography
                 variant="h4"
                 component="h4"
@@ -13,7 +17,10 @@ const SpaceShooter = () => {
                 textAlign="center"
                 gutterBottom
             >
-                2) Space Shooter Game Prototype
+                2){" "}
+                <span style={{ textDecoration: "underline" }}>
+                    Space Shooter Game Prototype
+                </span>
             </Typography>
 
             <Carousel
@@ -33,7 +40,7 @@ const SpaceShooter = () => {
                 direction="column"
                 spacing={2}
             >
-                <Card>
+                <Card className={isVisible ? "animation--2" : ""}>
                     <CardContent>
                         <Typography variant="h4" component="h4" gutterBottom>
                             Description:
@@ -61,7 +68,7 @@ const SpaceShooter = () => {
                         <Typography variant="h4" component="h4" gutterBottom>
                             Technologies:
                         </Typography>
-                        <Typography>
+                        <Typography sx={{ cursor: "default" }}>
                             <Tec>C++</Tec> <Tec>Sigil Lib</Tec>{" "}
                             <Tec>VS(2019)</Tec>
                         </Typography>
@@ -100,8 +107,7 @@ const SpaceShooter = () => {
                         </Typography>
                     </CardContent>
                 </Card>
-                <Card></Card>
-                <Card>
+                <Card className={isVisible ? "animation--2" : ""}>
                     <CardContent>
                         <Typography variant="h4" component="h4" gutterBottom>
                             How it came to be:

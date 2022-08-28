@@ -4,7 +4,7 @@ import { MyStory, SpaceShooter } from "./subComponents";
 
 const Projects = () => {
     return (
-        <Box id="projects" m="5rem 0 0 0" bgcolor="#222222">
+        <Box id="projects" bgcolor="#222222">
             <Typography
                 variant="h3"
                 component="h3"

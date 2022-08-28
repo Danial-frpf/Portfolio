@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Profile, AboutMe, Skills, Projects, Footer } from "../";
 import { Box, SwipeableDrawer } from "@mui/material";
+import { SideMenu } from "./subComponents";
 
 const Home = () => {
     const [openDrawer, setOpenDrawer] = useState(false);
@@ -9,20 +10,31 @@ const Home = () => {
             <SwipeableDrawer
                 open={openDrawer}
                 onOpen={() => {
-                    console.log("open");
                     setOpenDrawer(true);
+                    console.log("rensa");
                 }}
                 onClose={() => {
-                    console.log("rans");
                     setOpenDrawer(false);
+                    console.log("reasfsaS");
                 }}
             >
-                Things
+                <SideMenu setOpenDrawer={setOpenDrawer} />
             </SwipeableDrawer>
+
             <Navbar setOpenDrawer={setOpenDrawer} />
             <Profile />
-            <AboutMe />
-            <Skills />
+            <Box height={{ xs: "240vh", sm: "220vh", md: "200vh" }}>
+                <ul className="bg--animation--2">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <AboutMe />
+                <Skills />
+            </Box>
             <Projects />
             <Footer />
         </Box>

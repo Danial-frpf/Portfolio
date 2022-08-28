@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Carousel, Tec } from "./";
 import { myStoryImages } from "../../../media/";
 import { Box, Card, CardContent, Stack, Typography } from "@mui/material";
+import { useOnScreen } from "../../../customHooks";
 
 const MyStory = () => {
+    const myStoryRef = useRef();
+    const isVisible = useOnScreen(myStoryRef);
     return (
-        <Box>
+        <Box ref={myStoryRef}>
             <Typography
                 variant="h4"
                 component="h4"
@@ -13,7 +16,7 @@ const MyStory = () => {
                 textAlign="center"
                 gutterBottom
             >
-                1) My Story
+                1) <span style={{ textDecoration: "underline" }}>My Story</span>
             </Typography>
 
             <Carousel
@@ -33,7 +36,7 @@ const MyStory = () => {
                 direction="column"
                 spacing={2}
             >
-                <Card>
+                <Card className={isVisible ? "animation--2" : ""}>
                     <CardContent>
                         <Typography variant="h4" component="h4" gutterBottom>
                             Description:
@@ -84,7 +87,7 @@ const MyStory = () => {
                         </Typography>
                     </CardContent>
                 </Card>
-                <Card>
+                <Card className={isVisible ? "animation--2" : ""}>
                     <CardContent>
                         <Typography variant="h4" component="h4" gutterBottom>
                             Technologies:
@@ -97,7 +100,7 @@ const MyStory = () => {
                         >
                             Front-end:
                         </Typography>
-                        <Typography>
+                        <Typography sx={{ cursor: "default" }}>
                             <Tec>Html</Tec> <Tec>CSS</Tec> <Tec>Javascript</Tec>{" "}
                             <Tec>React</Tec> <Tec>MUI</Tec> <Tec>Axios</Tec>{" "}
                             <Tec>Moment</Tec>
@@ -110,16 +113,16 @@ const MyStory = () => {
                         >
                             Back-end:
                         </Typography>
-                        <Typography>
-                            <Tec>Express</Tec> <Tec>MonogoDB</Tec>{" "}
-                            <Tec>Mongoose</Tec> <Tec>NodeJS</Tec>{" "}
-                            <Tec>JsonWebToken</Tec> <Tec>Nodemon</Tec>{" "}
-                            <Tec>BodyParser</Tec> <Tec>BCrypt</Tec>{" "}
-                            <Tec>Dotenv</Tec>
+                        <Typography sx={{ cursor: "default" }}>
+                            <Tec className="hover--animation--1">Express</Tec>{" "}
+                            <Tec>MonogoDB</Tec> <Tec>Mongoose</Tec>{" "}
+                            <Tec>NodeJS</Tec> <Tec>JsonWebToken</Tec>{" "}
+                            <Tec>Nodemon</Tec> <Tec>BodyParser</Tec>{" "}
+                            <Tec>BCrypt</Tec> <Tec>Dotenv</Tec>
                         </Typography>
                     </CardContent>
                 </Card>
-                <Card>
+                <Card className={isVisible ? "animation--2" : ""}>
                     <CardContent>
                         <Typography variant="h4" component="h4" gutterBottom>
                             How it started:

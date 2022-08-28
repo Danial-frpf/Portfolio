@@ -15,6 +15,7 @@ const Skills = () => {
     const skillsRef = useRef();
     const isVisible = useOnScreen(skillsRef);
 
+    //688 528
     return (
         <Box id="skills" ref={skillsRef} overflow="hidden">
             <Typography

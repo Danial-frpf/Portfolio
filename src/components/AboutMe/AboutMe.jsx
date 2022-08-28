@@ -16,12 +16,6 @@ const AboutMe = () => {
             overflow="hidden"
             ref={aboutRef}
         >
-            <ul className="bg--animation--2">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
             <Typography variant="h3" component="h3" textAlign="center">
                 About Me
             </Typography>
@@ -32,7 +26,7 @@ const AboutMe = () => {
                 color="textSecondary"
                 textAlign="center"
             >
-                I'm a flexible programmer who can do things from designing to
+                I'm a full stack programmer who can do things from designing to
                 writing front-end using html + css + javascript + react all the
                 way to writing backend servers using NodeJs and MongoDb.
             </Typography>
@@ -44,13 +38,12 @@ const AboutMe = () => {
                 textAlign="center"
             >
                 I got into programming in middle school when I hacked some files
-                of a game using a youtube video. It ignited a passionate fire
-                for programming in my heart. Later in High School I learned html
-                + css and designed my first static website.Than I went on to
-                learn C++, Python and Java and using that knowledge I designed
-                my first prototype game. Now I'm specialized in MERN stack and
-                want to build highly interactive websites and make them alive
-                using animations and subtle things.
+                of a game using internet. Later in High School I learned html +
+                css and designed my first static website.Than I went on to learn
+                C++, Python and Java and using that knowledge I designed a
+                prototype for a space game. Now I'm specialized in MERN stack
+                and want to build highly interactive websites and make them
+                alive using animations and subtle things.
             </Typography>
         </Box>
     );
