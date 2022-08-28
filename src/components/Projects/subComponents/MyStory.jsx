@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
-import { Carousel, Tec } from "./";
+import { Carousel, Tec, ProjectCard } from "./";
 import { myStoryImages } from "../../../media/";
-import { Box, Card, CardContent, Stack, Typography } from "@mui/material";
+import { Box, CardContent, Stack, Typography } from "@mui/material";
 import { useOnScreen } from "../../../customHooks";
 
 const MyStory = () => {
@@ -30,13 +30,24 @@ const MyStory = () => {
                 }}
             />
             <Stack
-                p="2rem 5rem"
+                p="2rem 0.5rem"
                 justifyContent="center"
                 alignItems="center"
                 direction="column"
                 spacing={2}
             >
-                <Card className={isVisible ? "animation--2" : ""}>
+                <ProjectCard
+                    className={isVisible ? "animation--2" : ""}
+                    sx={{
+                        width: {
+                            xs: "100%",
+                            sm: "100%",
+                            md: "80%",
+                            lg: "80%",
+                            xl: "70%",
+                        },
+                    }}
+                >
                     <CardContent>
                         <Typography variant="h4" component="h4" gutterBottom>
                             Description:
@@ -86,8 +97,8 @@ const MyStory = () => {
                             </Typography>
                         </Typography>
                     </CardContent>
-                </Card>
-                <Card className={isVisible ? "animation--2" : ""}>
+                </ProjectCard>
+                <ProjectCard className={isVisible ? "animation--2" : ""}>
                     <CardContent>
                         <Typography variant="h4" component="h4" gutterBottom>
                             Technologies:
@@ -121,8 +132,8 @@ const MyStory = () => {
                             <Tec>BCrypt</Tec> <Tec>Dotenv</Tec>
                         </Typography>
                     </CardContent>
-                </Card>
-                <Card className={isVisible ? "animation--2" : ""}>
+                </ProjectCard>
+                <ProjectCard className={isVisible ? "animation--2" : ""}>
                     <CardContent>
                         <Typography variant="h4" component="h4" gutterBottom>
                             How it started:
@@ -186,7 +197,7 @@ const MyStory = () => {
                             </ul>
                         </Typography>
                     </CardContent>
-                </Card>
+                </ProjectCard>
             </Stack>
         </Box>
     );

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
-import { Carousel, Tec } from "./";
+import { Carousel, Tec, ProjectCard } from "./";
 import { spaceShooterImages } from "../../../media/";
-import { Box, Card, CardContent, Stack, Typography } from "@mui/material";
+import { Box, CardContent, Stack, Typography } from "@mui/material";
 import { useOnScreen } from "../../../customHooks";
 
 const SpaceShooter = () => {
@@ -34,13 +34,13 @@ const SpaceShooter = () => {
                 }}
             />
             <Stack
-                p="2rem 5rem"
+                p="2rem 0.5rem"
                 justifyContent="center"
                 alignItems="center"
                 direction="column"
                 spacing={2}
             >
-                <Card className={isVisible ? "animation--2" : ""}>
+                <ProjectCard className={isVisible ? "animation--2" : ""}>
                     <CardContent>
                         <Typography variant="h4" component="h4" gutterBottom>
                             Description:
@@ -106,8 +106,8 @@ const SpaceShooter = () => {
                             </Typography>
                         </Typography>
                     </CardContent>
-                </Card>
-                <Card className={isVisible ? "animation--2" : ""}>
+                </ProjectCard>
+                <ProjectCard className={isVisible ? "animation--2" : ""}>
                     <CardContent>
                         <Typography variant="h4" component="h4" gutterBottom>
                             How it came to be:
@@ -135,7 +135,7 @@ const SpaceShooter = () => {
                             about it.
                         </Typography>
                     </CardContent>
-                </Card>
+                </ProjectCard>
             </Stack>
         </Box>
     );

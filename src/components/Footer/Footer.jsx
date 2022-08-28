@@ -61,7 +61,7 @@ const Footer = () => {
                                 </Grid>
                             </Grid>
                         </Box>
-                        <Box>
+                        <Box style={{ overflow: "hidden" }}>
                             <Grid
                                 container
                                 alignItems="center"
@@ -88,7 +88,7 @@ const Footer = () => {
                                 </Grid>
                             </Grid>
                         </Box>
-                        <Box>
+                        <Box style={{ overflow: "hidden" }}>
                             <Grid
                                 container
                                 alignItems="center"
