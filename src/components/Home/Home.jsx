@@ -23,7 +23,7 @@ const Home = () => {
 
             <Navbar setOpenDrawer={setOpenDrawer} />
             <Profile />
-            <Box height={{ xs: "240vh", sm: "220vh", md: "200vh" }}>
+            <Box height={{ xs: "240vh", sm: "220vh", md: "220vh" }}>
                 <ul className="bg--animation--2">
                     <li></li>
                     <li></li>

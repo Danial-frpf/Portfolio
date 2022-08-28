@@ -6,8 +6,8 @@ import { Box, Stack, Typography } from "@mui/material";
 const Skills = () => {
     const main = ["Html", "CSS", "Javascript"];
     const main2 = ["MongoDB", "Express", "React", "NodeJS"];
-    const secondary = ["MUI", "Tailwind", "Moment"];
-    const secondary2 = ["Redux", "React-Router", "Axios", "Cors"];
+    const secondary = ["MUI", "Tailwind", "NextJS"];
+    const secondary2 = ["Redux", "Python", "Godot", "Figma"];
     const secondary3 = ["Git", "Firebase", "Heroku"];
 
     const skills = [main, main2, secondary, secondary2, secondary3];
@@ -24,7 +24,7 @@ const Skills = () => {
                 p="1rem 0"
                 textAlign="center"
             >
-                Skills
+                My Skills
             </Typography>
             {skills.map((currentSet, i) => (
                 <Stack

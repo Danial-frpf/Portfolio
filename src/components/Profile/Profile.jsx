@@ -49,7 +49,7 @@ const Profile = () => {
                             color="error.main"
                             textAlign="center"
                         >
-                            I love programming, computers and gaming
+                            I love web and game development
                         </Typography>
                         <Typography
                             className={isVisible ? "text--animation--1" : ""}
@@ -58,10 +58,9 @@ const Profile = () => {
                             color="textSecondary"
                             textAlign="center"
                         >
-                            I'm a self taught programmer from Sargodha who is
-                            specialized in building react web-apps using MERN
-                            Stack. My goal is to make beautiful and interactive
-                            websites that feels alive.
+                            I'm a <strong>full stack programmer</strong> who is
+                            specialized in building react web-apps using{" "}
+                            <strong>MERN Stack</strong>.
                         </Typography>
                     </Box>
                 </Grid>

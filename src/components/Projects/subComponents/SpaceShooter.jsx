@@ -110,7 +110,7 @@ const SpaceShooter = () => {
                 <ProjectCard className={isVisible ? "animation--2" : ""}>
                     <CardContent>
                         <Typography variant="h4" component="h4" gutterBottom>
-                            How it came to be:
+                            How it started:
                         </Typography>
                         <Typography
                             variant="body1"
