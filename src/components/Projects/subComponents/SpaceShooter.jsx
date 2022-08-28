@@ -55,7 +55,7 @@ const SpaceShooter = () => {
                             ship and use it to clear the enemies on each stage.
                             <br />
                             Some of the features are given below:
-                            <ul>
+                            <ul style={{ padding: "0rem 1rem" }}>
                                 <li>4 different Stages</li>
                                 <li>3 Unique bosses to fight with</li>
                                 <li>Ship upgrades on clearing each stage</li>

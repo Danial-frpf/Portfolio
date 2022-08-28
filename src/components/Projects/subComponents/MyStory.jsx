@@ -146,7 +146,7 @@ const MyStory = () => {
                             Actually I started working on this project from a
                             tutorial on MERN but later I changed and added a lot
                             of things in this project. For example,
-                            <ul>
+                            <ul style={{ padding: "0rem 1rem" }}>
                                 <li>
                                     Added lots of animation. (card animation,
                                     text animation etc).
@@ -183,7 +183,7 @@ const MyStory = () => {
                                 <li>
                                     Fixed a lot of bugs. Example of some big
                                     ones are,
-                                    <ul>
+                                    <ul style={{ padding: "0rem 1rem" }}>
                                         <li>
                                             Showing loading animation even
                                             though pages were completely loaded.
