@@ -11,11 +11,9 @@ const Home = () => {
                 open={openDrawer}
                 onOpen={() => {
                     setOpenDrawer(true);
-                    console.log("rensa");
                 }}
                 onClose={() => {
                     setOpenDrawer(false);
-                    console.log("reasfsaS");
                 }}
             >
                 <SideMenu setOpenDrawer={setOpenDrawer} />

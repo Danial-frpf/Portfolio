@@ -7,7 +7,7 @@ const Skills = () => {
     const main = ["Html", "CSS", "Javascript"];
     const main2 = ["MongoDB", "Express", "React", "NodeJS"];
     const secondary = ["MUI", "Tailwind", "NextJS"];
-    const secondary2 = ["Redux", "Python", "Godot", "Figma"];
+    const secondary2 = ["Redux", "Python", "TypeScript", "WordPress"];
     const secondary3 = ["Git", "Firebase", "Heroku"];
 
     const skills = [main, main2, secondary, secondary2, secondary3];

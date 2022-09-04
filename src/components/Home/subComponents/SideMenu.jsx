@@ -33,8 +33,8 @@ const SideMenu = ({ setOpenDrawer }) => {
         <Box bgcolor="#10022b" height="100%">
             <List>
                 {MENU.map((item, i) => (
-                    <>
-                        <ListItem key={i} disablePadding>
+                    <div key={i}>
+                        <ListItem disablePadding>
                             <ListItemButton
                                 bgcolor="red"
                                 component="a"
@@ -55,7 +55,7 @@ const SideMenu = ({ setOpenDrawer }) => {
                             </ListItemButton>
                         </ListItem>
                         <Divider color="#aaaaaa" />
-                    </>
+                    </div>
                 ))}
             </List>
         </Box>

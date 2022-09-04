@@ -18,6 +18,7 @@ const Navbar = ({ setOpenDrawer }) => {
     const scrollValue = useScrollProgress();
     return (
         <>
+            <div id="profile"></div>
             <Slide appear={false} direction="down" in={!trigger}>
                 <AppBar position="sticky">
                     <Box bgcolor="#10022b" display="flex">
@@ -41,10 +42,12 @@ const Navbar = ({ setOpenDrawer }) => {
                         </IconButton>
                         <Typography
                             variant="h4"
-                            component="h4"
+                            component="a"
                             fontFamily="smooch"
+                            color="white"
                             p="0.5rem"
                             flex={1}
+                            href="#profile"
                         >
                             DNail
                         </Typography>

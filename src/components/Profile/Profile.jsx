@@ -10,7 +10,7 @@ const Profile = () => {
     const isVisible = useOnScreen(profileRef);
 
     return (
-        <Box id="profile" ref={profileRef} overflow="hidden">
+        <Box ref={profileRef} overflow="hidden">
             <Grid container height={{ xs: "120vh", sm: "80vh" }}>
                 <Box className="bg--1"></Box>
                 <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>

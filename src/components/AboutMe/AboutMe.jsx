@@ -41,10 +41,11 @@ const AboutMe = () => {
                     color="textSecondary"
                     textAlign="center"
                 >
-                    I'm a full stack programmer who can do things from designing
-                    to writing front-end using html + css + javascript + react
-                    all the way to writing backend servers using NodeJS and
-                    MongoDB.
+                    I'm a <strong>full stack programmer</strong> who can do
+                    things from designing to writing <strong>front-end</strong>{" "}
+                    using <strong>html + css + javascript + react</strong> all
+                    the way to writing <strong>backend</strong> servers using{" "}
+                    <strong>NodeJS</strong> and <strong>MongoDB</strong>.
                 </Typography>
                 <Typography
                     className={isVisible ? "text--animation--1" : ""}
@@ -56,11 +57,12 @@ const AboutMe = () => {
                     I primarily use <strong>javascript</strong> related
                     technologies like <strong>react</strong> and{" "}
                     <strong>nodeJS</strong> to built websites. But I'm also open
-                    to learning new frameworks. I enjoy both front-end and
-                    backend related work. For pure design work I use{" "}
+                    to learning new frameworks. I enjoy both{" "}
+                    <strong>front-end</strong> and <strong>backend</strong>{" "}
+                    related work. For pure design work I use{" "}
                     <strong>figma</strong> as my go to tool. For backend I
                     usually use <strong>nodeJS</strong> with{" "}
-                    <strong>express</strong> and for database I use{" "}
+                    <strong>express</strong> and for databases I use{" "}
                     <strong>mongoDB</strong>. Although I'm also comfortable with{" "}
                     <strong>SQL</strong> based databases.
                 </Typography>
