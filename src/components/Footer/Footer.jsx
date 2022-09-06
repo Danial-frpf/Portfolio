@@ -81,9 +81,9 @@ const Footer = () => {
                                     <Typography
                                         variant="body1"
                                         component="a"
-                                        href="https://www.linkedin.com/in/muhammad-danial-zafar-11a12b240/"
+                                        href="https://www.linkedin.com/in/muhammad-danial-zafar-11a12b240"
                                     >
-                                        https://www.linkedin.com/in/muhammad-danial-zafar-11a12b240/
+                                        https://www.linkedin.com/in/muhammad-danial-zafar-11a12b240
                                     </Typography>
                                 </Grid>
                             </Grid>
