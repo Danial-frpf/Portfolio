@@ -59,7 +59,7 @@ const Profile = () => {
                             textAlign="center"
                         >
                             I'm a <strong>full stack programmer</strong> who is
-                            specialized in building react web-apps using{" "}
+                            specialised in building react web-apps using{" "}
                             <strong>MERN Stack</strong>.
                         </Typography>
                     </Box>

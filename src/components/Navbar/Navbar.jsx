@@ -95,7 +95,8 @@ const Navbar = ({ setOpenDrawer }) => {
                             <NavButton
                                 size="large"
                                 component="a"
-                                href="#resume"
+                                href="https://danial-frpf.github.io/resume/"
+                                target="_blank"
                             >
                                 Resume
                             </NavButton>
