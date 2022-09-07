@@ -33,7 +33,7 @@ const Profile = () => {
                             color="success.main"
                             textAlign="center"
                         >
-                            <strong>Asslam-u-Alaikum!</strong> My name is,
+                            <strong>Hi!</strong> I'm,
                         </Typography>
                         <Typography
                             variant="h3"
@@ -42,14 +42,6 @@ const Profile = () => {
                             textAlign="center"
                         >
                             Muhammad Danial
-                        </Typography>
-                        <Typography
-                            variant="h6"
-                            component="h6"
-                            color="error.main"
-                            textAlign="center"
-                        >
-                            I love web and game development
                         </Typography>
                         <Typography
                             className={isVisible ? "text--animation--1" : ""}

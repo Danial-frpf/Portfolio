@@ -19,10 +19,10 @@ const AboutMe = () => {
                 sx={{
                     width: {
                         xs: "100%",
-                        sm: "80%",
-                        md: "70%",
-                        lg: "70%",
-                        xl: "60%",
+                        sm: "60%",
+                        md: "50%",
+                        lg: "50%",
+                        xl: "50%",
                     },
                 }}
             >
@@ -36,10 +36,18 @@ const AboutMe = () => {
                 </Typography>
                 <Typography
                     className={isVisible ? "text--animation--1" : ""}
+                    sx={{
+                        textAlign: {
+                            xs: "left",
+                            sm: "center",
+                            md: "center",
+                            lg: "center",
+                            xl: "center",
+                        },
+                    }}
                     variant="subtitle1"
                     component="p"
                     color="textSecondary"
-                    textAlign="center"
                 >
                     I'm a <strong>full stack programmer</strong> who can do
                     things from designing to writing <strong>front-end</strong>{" "}
@@ -47,8 +55,18 @@ const AboutMe = () => {
                     the way to writing <strong>backend</strong> servers using{" "}
                     <strong>NodeJS</strong> and <strong>MongoDB</strong>.
                 </Typography>
+                <br />
                 <Typography
                     className={isVisible ? "text--animation--1" : ""}
+                    sx={{
+                        textAlign: {
+                            xs: "left",
+                            sm: "center",
+                            md: "center",
+                            lg: "center",
+                            xl: "center",
+                        },
+                    }}
                     variant="subtitle1"
                     component="p"
                     color="textSecondary"
