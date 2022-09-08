@@ -23,7 +23,7 @@ const SideMenu = ({ setOpenDrawer }) => {
         "#aboutMe",
         "#skills",
         "#projects",
-        "#resume",
+        "https://danial-frpf.github.io/resume/",
         "#contactMe",
     ];
     const clickHandler = () => {
